@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logueo | Rincón Urbano</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<header>
+    <style>
+        .gradient-custom-3 {
+/* fallback for old browsers */
+background: #84fab0;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+/* fallback for old browsers */
+background: #84fab0;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+        .navbar .nav-link {
+        color: #0e0d0d !important;
+      }
+    </style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_blank" href="/rinconUrbano.html">
+        <strong>Rincón Urbano</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="profile.html">Mi Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/watch?v=1Pq79-lv1tI" rel="nofollow"
+              target="_blank">Bienvenido a Chile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.tripadvisor.cl/Attractions-g294291-Activities-Chile.html" target="_blank">Recomendaciones</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav d-flex flex-row">
+          <!-- Icons -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.youtube.com/watch?v=1Pq79-lv1tI" rel="nofollow"
+              target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+<body>
+  <section class="vh-100 bg-image"
+  style="background-image: url('https://img.freepik.com/free-vector/urban-city-background-video-conferencing_52683-45469.jpg?w=1800&t=st=1680286639~exp=1680287239~hmac=438b2882c9eeef4463d9df2faf20d8eb161c6974d8784c0915345b345faec17b');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Ingresa tu Email</h2>
+
+              <form>
+
+
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example3cg">Tu Email</label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <a type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"href="correo.html">Recuperar Cuenta</a>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Si no tienes una cuenta <a href="register.html"
+                    class="fw-bold text-body"><u>Registrate aquí</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer
+class="text-center text-lg-start text-white"
+style="background-color: #191717a4"
+>
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+<!--Grid row-->
+<div class="row">
+<!--Grid column-->
+<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Rincón Urbano</h5>
+
+  <p>
+    Un espacio para cononocer nuestra ciudad, compartir y opinar acerca de las distintas situaciones
+    y fenomenos que ocurren en el Gran Santiago. Somos un medio alternativo que busca contar con la participación
+    de su comunidad
+  </p>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Opinión</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#!" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Actualidad</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#!" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Noticias</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#!" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Comunidad</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#!" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#!" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="mb-4" />
+
+<!-- Section: CTA -->
+<section class="">
+<p class="d-flex justify-content-center align-items-center">
+<a type="button" class="btn btn-outline-light btn-rounded" href="https://www.instagram.com/rurbanocl/">
+  Siguenos en nuestro Instagram
+</a>
+</p>
+</section>
+<!-- Section: CTA -->
+
+<hr class="mb-4" />
+
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: rgba(0, 0, 0, 0.2)"
+>
+© 2023 Copyright:
+<a class="text-white" href="https://github.com/NibelungoCL"
+>NibelungoCL</a
+>
+</div>
+<!-- Copyright -->
+</footer>
+</body>
+</html>

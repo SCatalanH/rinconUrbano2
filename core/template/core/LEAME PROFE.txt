@@ -1,0 +1,23 @@
+Estimado Profesor
+
+Algunas aclaraciones respecto del trabajo que he realizado.
+
+En primer lugar me gustaría aclarar que el trabajo lo he hecho solo, luego que de común acuerdo con mi companera de grupo decidieramos hacerlo por separado, ella (Maite), me comentó que tenía mucho trabajo y tiempos muy reducidos, y yo, por mi parte, al estar en estos momentos en Austria, nuestra diferencia de horario nos hace imposible organizarnos. Por ello nos coordinamos y ella preguntó si era posible hacerlo solo, por lo que así lo hicimos cada uno. Somos parte del grupo 1.
+
+En segundo lugar, aclarar que el tema a elegir ha sido el de una página web de un sitio/comunidad informativa alternativa, que informe respecto de la ciudad de Santiago. La página se llama Rincón Urbano, y la idea es que sea un medio informativo que a través de una linea editorial independiente comente acerca de los problemas de santiago, desafíos, consejos, rutas, picadas, etc. La idea es que se pueda, a través de las secciones de comentarios, crear una comunidad, la cual al crecer pueda participar creando varias columnas de opinión.
+
+Al momento la página se divide en secciones de noticias y también en secciones de columna de opinión, he tratado de hacer lo máximo posible para la primera entrega de tal forma en que quede claro cual sería la estructura final del proyecto.
+
+No he entendido muy bien algunos de los requisitos de la rúbrica, y veo que hay algunas cosas ahí que aún no han sido pasadas por materia, pero hice cuanto pude.
+
+Aun así incluyo el repositorio git en carpeta y además incluyo el link a éste. Cualquier detalle o necesidad que requiera la página, mas allá de la calificación, agradecería que fuera comentado a través de mensaje, ya que me hace mucha falta feedback externo al estar haciendo el trabajo solo,
+
+
+Un grato saludo,
+
+Sebastián Catalán
+
+
+PD: Link del Repositorio https://github.com/SCatalanH/rinconUrbano/ (NibelungoCL soy yo de igual manera)
+
+Estoy atento a cualquier duda sobre el trabajo
