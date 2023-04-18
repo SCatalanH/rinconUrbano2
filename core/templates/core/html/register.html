@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logueo | Rincón Urbano</title>
+  <title>Registro | Rincón Urbano</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</head>
 
+</head>
 <header>
-  <style>
+  <style> 
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #B06AB3;
+  padding-top: 20px;
+
+}
 .gradient-custom-3 {
 /* fallback for old browsers */
 background: #84fab0;
@@ -40,7 +46,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
 <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-brand nav-link" target="_blank" href="/rinconUrbano.html">
+    <a class="navbar-brand nav-link" target="_blank" href=home>
       <strong>Rincón Urbano</strong>
     </a>
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
@@ -50,7 +56,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
     <div class="collapse navbar-collapse" id="navbarExample01">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="profile.html">Mi Perfil</a>
+          <a class="nav-link" aria-current="page" href=profile>Mi Perfil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.youtube.com/watch?v=1Pq79-lv1tI" rel="nofollow"
@@ -98,18 +104,71 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Términos y Condiciones</h2>
+              <h2 class="text-uppercase text-center mb-5">Crea una cuenta</h2>
 
-              <form>
+              <form class="row g-3 needs-validation" novalidate>
+
+                <div class="form-outline mb-4">
+                  <label for="validationCustom01" class="form-label">Primer Nombre</label>
+                  <input type="text" class="form-control" id="firstname" value="" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label for="validationCustom02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="lastname" value="" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              
+                </div>
+                <div class="form-outline mb-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example4cg">Contrasena</label>
+                </div>
 
 
-              <p>
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example4cdg">Repita su contrasena</label>
+                </div>
+                <p class="warnings" id="warnings"></p>
 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, est optio. Quo mollitia reprehenderit culpa perferendis sunt quos, deleniti molestiae fugiat! Quibusdam corporis hic molestias neque molestiae quo at magni nostrum est aut, laborum dolorum. Quia atque maiores ex corporis ratione dolorem at vero quasi repudiandae tempora! Placeat doloremque earum optio itaque quae neque culpa dolorem soluta hic eos sed facilis dolor error voluptatum, quia ipsa omnis voluptates voluptatibus repellendus animi quaerat in officia. Sunt voluptates velit fugiat eligendi facilis dolore odit at quae eos voluptatibus, error cupiditate pariatur recusandae aut eveniet ipsam possimus ratione, aperiam vel nesciunt totam, ipsum ut! Vitae quia voluptatem nam facilis consequatur autem, reiciendis, ab fugit temporibus eum voluptatum quisquam expedita sapiente repellat quam! Commodi, quibusdam officiis, libero sint mollitia quidem inventore sunt dolores dolorem illum beatae deserunt quo odit consectetur, quia et harum perferendis minima a tempora excepturi. Ducimus quo enim consectetur sequi consequatur, exercitationem tenetur quaerat ad magni ex nemo, dolore id iste alias ullam necessitatibus voluptates consequuntur quam nobis in! Nulla eius iusto ullam reprehenderit iste laborum consequuntur porro exercitationem quod officiis optio temporibus est, totam aperiam nam doloribus soluta accusantium nesciunt maiores illum. Nihil, unde totam! Quis earum vel odit! Incidunt ea vitae odit sapiente harum porro, modi veritatis culpa magnam minus assumenda optio ut eius obcaecati necessitatibus delectus sunt tempora voluptatibus, voluptas vel, corporis ipsum. Iusto numquam aperiam neque suscipit autem culpa nemo. Tenetur maxime, labore et veniam cumque ab provident ullam soluta omnis voluptates vitae, nesciunt debitis. Voluptatum, ex.
-              </p>
+                
+                <div class="form-check d-flex justify-content-center mb-5">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Aceptas los <a href=terminos>terminos y condiciones</a>
+                      </label>
+                      <div class="invalid-feedback">
+                        Debes aceptar los terminos antes de registrarte
+                      </div>
+                    </div>
+                  </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Si quieres volver al registro <a href="register.html"
-                    class="fw-bold text-body"><u>TOCA AQUÍ</u></a></p>
+                
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-primary gradient-custom-4 text-body" type="button">Registrarse</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Ya tienes una cuenta? <a href=signin
+                    class="fw-bold text-body"><u>Logueate aquí</u></a></p>
 
               </form>
 
@@ -260,5 +319,31 @@ style="background-color: rgba(0, 0, 0, 0.2)"
 </div>
 <!-- Copyright -->
 </footer>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+  
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>
