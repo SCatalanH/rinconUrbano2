@@ -73,4 +73,3 @@ def article(request, series: str, article: str):
 
    # return render(request, 'core/html/testing.html')
 ###################################
-
