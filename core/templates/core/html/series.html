@@ -1,0 +1,28 @@
+
+{% extends "core/header.html" %}
+{% block content %}
+<hr class="my-5" />
+     <section class="text-center">
+      <h4 class="mb-5"><strong>Publicaciones de la Categoría</strong></h4>
+    <div class="row display-flex justify-content-start">
+    {% for objects in objects %}
+        <div class="col-lg-4 col-md-6 col-sm-12 mobiledevice">
+            <article class="media content-section customhover" style="height: 95%;">
+                <div class="media-body">
+                    <a href="/{{objects.slug}}">
+                        <img class="img-fluid" src="/">
+                    </a>
+                    <div>
+                        <a class="article-title line-clamp-2 title-style" style="font-size: 22px" href="/{{objects.slug}}">
+                            {{ objects.title }}
+                        </a>
+                        <a href="/{{object.slug}}" style="text-decoration: none;">
+                            <p class="article-content line-clamp-5 subtitle-style">{{ objects.subtitle }}</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock content %}

@@ -1,16 +1,21 @@
-from django.urls import URLPattern, path
-from .views import home, rincon, registerpage, articulo, correo, profile, recuperar, signin, terminos, testing
-
+from django.urls import path
+from . import views 
 
 urlpatterns= [
-    path('', home, name="home"),
-    path('home', rincon, name="rincon"),
-    path('registerpage', registerpage, name="registerpage"),
-    path('articulo', articulo, name="articulo"),
-    path('correo', correo, name="correo"),
-    path('profile', profile, name="profile"),
-    path('recuperar', recuperar, name="recuperar"),
-    path('signin', signin, name="signin"),
-    path('terminos', terminos, name="terminos"),
-    path('testing', testing, name="testing"),
+
+    path("", views.home, name="home"),
+    path("<series>", views.series, name="series"),
+    path("<series>/<article>", views.article, name="article"),
+
+    #path('home', rincon, name="rincon"),
+    #path('registerpage', registerpage, name="registerpage"),
+    #path('correo', correo, name="correo"),
+    #path('profile', profile, name="profile"),
+    #path('recuperar', recuperar, name="recuperar"),
+    #path('signin', signin, name="signin"),
+    #path('terminos', terminos, name="terminos"),
+    #path('testing', testing, name="testing"),
+    
+
+
 ]
