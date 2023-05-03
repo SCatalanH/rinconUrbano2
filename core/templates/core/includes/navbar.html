@@ -18,7 +18,15 @@
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
                     <!-- django_project/main/templates/main/includes/navbar.html -->
+
+                    
 {% if user.is_authenticated %}
+
+{% if user.is_superuser %}
+                        <a class="nav-item nav-link" href="admin">Admin</a>
+                        <a class="nav-item nav-link" href="{% url 'series-create' %}">Nueva Categoria</a>
+                        <a class="nav-item nav-link" href="{% url 'post-create' %}">Nuevo Post</a>
+                    {% endif %}
     <a class="nav-item nav-link" href="{% url 'profile' user.username %}">
         {{user.username}} <i class="fas fa-user"></i>
     </a>
@@ -33,6 +41,8 @@
     Sign up <i class="fas fa-user-plus"></i>
 </a>
 {% endif %}
+
+
                 </div>
             </div>
         </div>

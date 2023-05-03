@@ -6,7 +6,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,7 +39,17 @@ INSTALLED_APPS = [
     'tinymce',
     'crispy_forms',
     'crispy_bootstrap4',
+    'six',
 ]
+
+#tinmce config
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880 # 5 MB
+
+TINYMCE_DEFAULT_CONFIG = {
+
+    "images_upload_url": "upload_image",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,7 +81,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'rinconUrbano.wsgi.application'
 
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -81,8 +92,8 @@ DATABASES = {
 #       'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'prueba',
-        'PASSWORD': 'prueba',
+        'USER': 'prueba2',
+        'PASSWORD': 'prueba2',
         'TEST': {
             'USER': 'default_test',
             'TBLSPACE': 'default_test_tbls',
@@ -92,7 +103,17 @@ DATABASES = {
 }
 
 
+# Emailing settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_FROM = 'scatalanhermosilla@gmail.com'
+EMAIL_HOST_USER = 'scatalanhermosilla@gmail.com'
+EMAIL_HOST_PASSWORD = 'hqyafbjoycauymbb'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
+PASSWORD_RESET_TIMEOUT = 14400
+...
 # django_project/django_website/settings.py
 AUTH_USER_MODEL = 'users.CustomUser'
 
