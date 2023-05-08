@@ -48,7 +48,7 @@ def register(request):
         )
 
 def activateEmail(request, user, to_email):
-    mail_subject = 'Activate your user account.'
+    mail_subject = 'Activa tu cuenta de usuario.'
     message = render_to_string('template_activate_account.html', {
         'user': user.username,
         'domain': get_current_site(request).domain,
@@ -58,15 +58,15 @@ def activateEmail(request, user, to_email):
     })
     email = EmailMessage(mail_subject, message, to=[to_email])
     if email.send():
-        messages.success(request, f'Dear <b>{user}</b>, please go to you email <b>{to_email}</b> inbox and click on \
-            received activation link to confirm and complete the registration. <b>Note:</b> Check your spam folder.')
+        messages.success(request, f'Estimado <b>{user}</b>, por favor ve a tu email <b>{to_email}</b> y clickea \
+            en el link de activación para activar y confirmar tu email. <b>Note:</b> Check your spam folder.')
     else:
-        messages.error(request, f'Problem sending confirmation email to {to_email}, check if you typed it correctly.')
+        messages.error(request, f'Si hay algun problema con el link, por favor envía un email a {to_email}, revisa si lo escribiste correctamente.')
 
 @login_required
 def custom_logout(request):
     logout(request)
-    messages.info(request, "Logged out successfully!")
+    messages.info(request, "Logueado satisfactoriamente")
     return redirect("home")
 
 @login_required
@@ -76,7 +76,7 @@ def password_change(request):
         form = SetPasswordForm(user, request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your password has been changed")
+            messages.success(request, "Tu contraseña ha cambiado")
             return redirect('login')
         else:
             for error in list(form.errors.values()):
@@ -105,11 +105,11 @@ def password_reset_request(request):
                 if email.send():
                     messages.success(request,
                         """
-                        <h2>Password reset sent</h2><hr>
+                        <h2>Reseteo de contraseña enviado</h2><hr>
                         <p>
-                            We've emailed you instructions for setting your password, if an account exists with the email you entered. 
-                            You should receive them shortly.<br>If you don't receive an email, please make sure you've entered the address 
-                            you registered with, and check your spam folder.
+                           Le hemos enviado instrucciones por correo electrónico para establecer su contraseña, si existe una cuenta con el correo electrónico que ingresó.
+                            Debería recibirlos en breve.<br>Si no recibe un correo electrónico, asegúrese de haber ingresado la dirección
+                            con el que te registraste y revisa tu carpeta de correo no deseado.
                         </p>
                         """
                     )

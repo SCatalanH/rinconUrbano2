@@ -1,4 +1,12 @@
 <!--django_project/main/templates/main/includes/navbar.html-->
+<style>
+/* Modify the background color */
+.navbar-color {
+	background-color: rgb(36, 26, 79);
+}
+
+</style>
+
 <script src= "indicadores.js"></script>
 <header class="site-header" style="margin-bottom: 5px">
     <nav class="navbar navbar-expand-md navbar-color">
@@ -16,7 +24,7 @@
                 <div class="navbar-nav mr-auto">
                     <a href="" id="indicadores"></a>
                 </div>
-                <li><a href="" id="feriado"></a></li>
+                
                 
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
@@ -34,14 +42,14 @@
         {{user.username}} <i class="fas fa-user"></i>
     </a>
 <a class="nav-item nav-link" href="{% url 'logout' %}">
-    Log out <i class="fas fa-sign-out-alt"></i>
+    Desloguear <i class="fas fa-sign-out-alt"></i>
 </a>
 {% else %}
 <a class="nav-item nav-link" href="{% url 'login' %}">
-    Log in <i class="fas fa-sign-in-alt"></i>
+    Loguearse <i class="fas fa-sign-in-alt"></i>
 </a>
 <a class="nav-item nav-link" href="{% url 'register' %}">
-    Sign up <i class="fas fa-user-plus"></i>
+    Registrarse <i class="fas fa-user-plus"></i>
 </a>
 {% endif %}
 

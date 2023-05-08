@@ -90,11 +90,11 @@ def newsletter(request):
             receivers = form.cleaned_data.get('receivers').split(',')
             email_message = form.cleaned_data.get('message')
 
-            mail = EmailMessage(subject, email_message, f"PyLessons <{request.user.email}>", bcc=receivers)
+            mail = EmailMessage(subject, email_message, f"Rincon Urbano <{request.user.email}>", bcc=receivers)
             mail.content_subtype = 'html'
 
             if mail.send():
-                messages.success(request, "Email sent succesfully")
+                messages.success(request, "Email enviado satisfactoriamente")
             else:
                 messages.error(request, "There was an error sending email")
 
@@ -154,7 +154,7 @@ def series_update(request, series):
         form = SeriesUpdateForm(request.POST, request.FILES, instance=matching_series)
         if form.is_valid():
             form.save()
-            return redirect('homepage')
+            return redirect('home')
     
     else:
         form = SeriesUpdateForm(instance=matching_series)

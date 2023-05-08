@@ -69,7 +69,7 @@ class Article(models.Model):
             return os.path.join('ArticleSeries', slugify(self.series.slug), slugify(self.article_slug), instance)
         return None
 
-    image = models.ImageField(default='default/no_image.png', upload_to=image_upload_to, max_length=255)
+    image = models.ImageField(default='default/efa239eb63acab82204c4ce60702c469.jpg', upload_to=image_upload_to, max_length=255)
 
     def __str__(self):
         return self.title

@@ -1,0 +1,20 @@
+Estimado, hago envío de la E3
+
+Nuevas cosas que he agregado se listan entre.
+
+
+- Newsletter funcional
+
+-Registro y Login funcional
+
+- Agregar contenidos desde el frontend
+
+- Posibilidad de recuperar contrasenia
+
+- Correo de verificacion
+
+- 2 Apis propias (Austria y Aerolineas)
+
+- 2 apis a medio implementar (no funcionales aun)
+
+Cualquier duda no dude en contactarme
