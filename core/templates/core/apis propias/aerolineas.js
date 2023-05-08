@@ -17,7 +17,7 @@ app.get('/airlines/:code', (req, res) => {
   const code = req.params.code;
   const airline = airlines.find(a => a.code === code);
   if (!airline) {
-    res.status(404).send('Airline not found');
+    res.status(404).send('Aerolinea no encontrada');
   } else {
     res.json(airline);
   }

@@ -95,7 +95,47 @@
       </div>
     </section>
 
-
+    <head>
+      <title>Obtener una cita aleatoria</title>
+      <style>
+        h1 {
+          text-align: center;
+        }
+        #quote-box {
+          border: 1px solid black;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Sabiduría Urbana</h1>
+      <div id="quote-box">
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
+      <script>
+        const url = 'https://quotes15.p.rapidapi.com/quotes/random/';
+        const options = {
+          method: 'GET',
+          headers: {
+            'X-RapidAPI-Key': '86241c9f4cmsh1f3bc78d63a4d6cp17611ejsn63faebce58b4',
+            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+          }
+        };
+    
+        fetch(url, options)
+          .then(response => response.json())
+          .then(result => {
+            const quote = result.content;
+            const author = result.originator.name;
+            document.getElementById('quote').innerText = quote;
+            document.getElementById('author').innerText = `— ${author}`;
+          })
+          .catch(error => console.error(error));
+      </script>
+    </body>
+    
+    
   
 
     <!--Section: APIS-->
@@ -118,6 +158,8 @@
     <h1>Indicador de tipo de cambio GBP/USD</h1>
   <div id="exchange-rate"></div>
 -->
+
+
 
     <hr class="my-5" />
     <section class="text-center">
@@ -161,6 +203,7 @@
 {% endif %}
     {% endfor %}
 
+    
     
     </div>
      <!--Section: Content-->
